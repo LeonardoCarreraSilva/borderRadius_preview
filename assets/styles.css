@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+body{
+  background-color: #000;
+  height: 100vh;
+}
+
+div{
+  align-self: center;
+  background-color: blue;
+  width: 320px;
+  padding: 50px;
+  margin: auto;
+  margin-top: 10%;
+}
