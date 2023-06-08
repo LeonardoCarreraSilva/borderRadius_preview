@@ -1,24 +1,68 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+  background-color: #232323
 }
 
 h1{
-  color: #fff;
   text-align: center;
-  margin-top: 20px;
+  color: white;
 }
-body{
-  background-color: #000;
-  height: 100vh;
+#container{
+  width: 550px;
+  margin: 50px auto;
+  position: relative;
 }
 
-div{
-  align-self: center;
-  background-color: blue;
-  width: 320px;
-  padding: 50px;
-  margin: auto;
-  margin-top: 10%;
-}
+ #container .input_container{
+  position: absolute;
+  width: 100px;
+  height: 50px;
+ }
+
+ #container .input_container#input_container_tl{
+  top: -2px;
+  left: -115px;
+  text-align: right;
+ }
+
+ #container .input_container#input_container_tr{
+  top: -2px;
+  left: -115px;
+  text-align: left;
+ }
+ #container .input_container#input_container_bl{
+  bottom: -2px;
+  left: -115px;
+  text-align: right;
+ }
+ #container .input_container#input_container_br{
+  bottom: -2px;
+  left: -115px;
+  text-align: left;
+ }
+
+ #container .input_container input{
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 82px;  
+  padding: 2px 8px;
+  border: 1px solid #2f2f2f;
+  outline: none;
+  background-color: #393939;
+  font: bold 15px Arial, Helvetica, sans-serif;
+  color: white;
+ }
+
+ #container .input_container#input_container_tr input,
+  #container .input_container#input_container_br input{
+    text-align: left;
+    right: auto;
+    left: 0;
+  }
+
+  #container .input_container#input_container_tl input,
+  #container .input_container#input_container_bl input{
+    top: auto;
+    bottom: -1;
+  }
